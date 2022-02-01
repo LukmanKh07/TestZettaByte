@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Test JavaScript </title>
+ 
+<script type="text/javascript">
+
+const result = (angka) => {
+let prime = [];
+let prima;
+  for (let i = 2; i <= angka; i++) {    
+    for (let j = 2; (prima = i === j || i % j !== 0) && j <= i / 2; j++) {}
+
+    prima && prime.push(i);
+  }
+  return prime;
+}
+
+console.log(result(28));
+</script>
+ 
+</head>
+ 
+<body>
+<h1> Test JavaScript</h1>
+<p> Buka hasil di inspect lalu console </p> 
+<div id="div_semangat"></div>
+</body>
+</html>
